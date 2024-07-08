@@ -10,6 +10,6 @@ func handler(w http.ResponseWriter, r *http.Request) {
 }
 
 func main() {
-	http.HandleFunc("/hello", handler)
+	http.HandleFunc("/builder", handler)
 	http.ListenAndServe(":8080", nil)
 }
