@@ -12,7 +12,7 @@ export class EmployeesService {
     });
   }
 
-  async findAll(role?: 'INTERN' | 'ENGINEER' | 'ADMIN') {
+  async findAll(role?: 'INTERN' | 'ENGINEER' | 'ADMIN' | 'MANAGER') {
     if (role) {
       const roleArray = await this.databaseService.employee.findMany({
         where: {

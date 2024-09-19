@@ -29,7 +29,7 @@ export class EmployeesController {
   @Get()
   findAll(
     @Ip() ip: string,
-    @Query('role') role?: 'INTERN' | 'ENGINEER' | 'ADMIN',
+    @Query('role') role?: 'INTERN' | 'ENGINEER' | 'ADMIN' | 'MANAGER',
   ) {
     this.logger.log(
       `Request for ALL employee \t${ip}`,
