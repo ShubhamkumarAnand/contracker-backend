@@ -26,7 +26,7 @@ export class EmployeesService {
   }
 
   async findOne(id: number) {
-    const employee = await this.databaseService.employee.findUnique({
+    const employee = await this.databaseService.employee.findFirst({
       where: {
         id: id,
       },
